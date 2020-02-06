@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import MyComponent from './pages/MyComponent';
-import { FunctionComponent } from './pages/FunctionComponent';
-import ClassComponentState from './pages/ClassComponentState';
+import MyComponent from './pages/level1/MyComponent';
+import { FunctionComponent } from './pages/level1/FunctionComponent';
+import ClassComponentState from './pages/level1/ClassComponentState';
+import EventHandleComponent from './pages/level1/EventHandleComponent';
 
 // function App() {
 //   return (
@@ -20,6 +21,7 @@ export default class App extends Component {
         <MyComponent />
         <FunctionComponent />
         <ClassComponentState />
+        <EventHandleComponent />
       </div>
     )
   }
