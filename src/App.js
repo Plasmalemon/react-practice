@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MyComponent from './myComponent';
-import { FunctionComponent } from './fnComponent';
+import MyComponent from './pages/MyComponent';
+import { FunctionComponent } from './pages/FunctionComponent';
 
 // function App() {
 //   return (
