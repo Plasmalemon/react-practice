@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MyComponent from './pages/MyComponent';
 import { FunctionComponent } from './pages/FunctionComponent';
+import ClassComponentState from './pages/ClassComponentState';
 
 // function App() {
 //   return (
@@ -18,6 +19,7 @@ export default class App extends Component {
       <div>
         <MyComponent />
         <FunctionComponent />
+        <ClassComponentState />
       </div>
     )
   }
