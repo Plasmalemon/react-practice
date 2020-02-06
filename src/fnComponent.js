@@ -18,4 +18,6 @@ export function FunctionComponent(props) {
         </div>
     )
 }
-
+// 16.8之后之后新增的hooks
+// 如果你熟悉 React class 的⽣生命周期函数，
+//你可以把 useEffect Hook 看做 componentDidMount，componentDidUpdate 和 componentWillUnmount 这三个函数的组合
