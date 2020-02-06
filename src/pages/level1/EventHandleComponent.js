@@ -52,3 +52,5 @@ export default EventHandleComponent
 // 2. ⽅方法定义为箭头函数: change = () => { }
 // 3. 事件中定义为箭头函数: onChange = {()=> this.change()}
 // react⾥里里遵循单项数据流，没有双向绑定，输⼊入框要设置value 和onChange，称为受控组件
+// TODO
+// 高阶组件会更简单

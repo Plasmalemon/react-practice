@@ -3,6 +3,7 @@ import MyComponent from './pages/level1/MyComponent';
 import { FunctionComponent } from './pages/level1/FunctionComponent';
 import ClassComponentState from './pages/level1/ClassComponentState';
 import EventHandleComponent from './pages/level1/EventHandleComponent';
+import LifeCycleComponent from './pages/level1/LifeCycleComponent';
 
 // function App() {
 //   return (
@@ -22,6 +23,7 @@ export default class App extends Component {
         <FunctionComponent />
         <ClassComponentState />
         <EventHandleComponent />
+        <LifeCycleComponent />
       </div>
     )
   }
