@@ -4,6 +4,7 @@ import { FunctionComponent } from './pages/level1/FunctionComponent';
 import ClassComponentState from './pages/level1/ClassComponentState';
 import EventHandleComponent from './pages/level1/EventHandleComponent';
 import LifeCycleComponent from './pages/level1/LifeCycleComponent';
+import NewLifeCycleComponent from './pages/level1/NewLifeCycleComponent';
 
 // function App() {
 //   return (
@@ -24,6 +25,7 @@ export default class App extends Component {
         <ClassComponentState />
         <EventHandleComponent />
         <LifeCycleComponent />
+        <NewLifeCycleComponent />
       </div>
     )
   }

@@ -80,3 +80,10 @@ class Foo extends Component {
 }
 
 // TODO 利用生命周期优化
+
+
+// V16.4之后的⽣生命周期:
+//  V17可能会废弃的三个⽣生命周期函数用getDerivedStateFromProps替代，目前使⽤的话加上UNSAFE_:
+// componentWillMount componentWillReceiveProps componentWillUpdate
+// 引⼊入两个新的生命周期函数:
+// static getDerivedStateFromProps getSnapshotBeforeUpdate

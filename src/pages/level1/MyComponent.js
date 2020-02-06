@@ -20,7 +20,7 @@ class MyComponent extends Component {
         }, 1000)
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         clearInterval(this.timer)
     }
 
