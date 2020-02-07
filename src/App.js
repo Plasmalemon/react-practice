@@ -7,8 +7,9 @@ import LifeCycleComponent from './pages/level1/LifeCycleComponent';
 import NewLifeCycleComponent from './pages/level1/NewLifeCycleComponent';
 import HomePage from './pages/level2/HomePage';
 
-import { Provider, Consumer } from './pages/level2/AppContext';
+import { Provider, Consumer, Parent } from './pages/level2/AppContext';
 import HocPage from './pages/level2/HocPage';
+import Composition from './pages/level2/Composition';
 
 // function App() {
 //   return (
@@ -46,7 +47,7 @@ export default class App extends Component {
         {/* level2 */}
         {/* <HomePage {...store} /> */}
         <Provider value={store}>
-          {/* 方法一 */}
+          {/* consumer方法一 */}
           {/* consumer 里边是个函数 */}
           {/* <Consumer>
             {
@@ -60,9 +61,11 @@ export default class App extends Component {
           </Consumer> */}
 
 
-          {/* 方法二 */}
+          {/* consumer方法二 */}
           <HomePage />
           <HocPage />
+          <Composition />
+          <Parent />
         </Provider>
       </div>
     )
