@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import MyComponent from './pages/level1/MyComponent';
 import { FunctionComponent } from './pages/level1/FunctionComponent';
 import ClassComponentState from './pages/level1/ClassComponentState';
 import EventHandleComponent from './pages/level1/EventHandleComponent';
 import LifeCycleComponent from './pages/level1/LifeCycleComponent';
 import NewLifeCycleComponent from './pages/level1/NewLifeCycleComponent';
+import HomePage from './pages/level2/HomePage';
+
+import { Provider, Consumer } from './pages/level2/AppContext';
 
 // function App() {
 //   return (
@@ -16,16 +19,49 @@ import NewLifeCycleComponent from './pages/level1/NewLifeCycleComponent';
 
 // export default App;
 
+// 组件通信方式一 props逐层传递
+// 组件通信方式二 context v16.3 跨层级传递
+// const Context = React.createContext();
+// const Provider = Context.Provider; // 提供者
+// const Consumer = Context.Consumer; // 消费者
+
+const store = {
+  user: {
+    name: '小明'
+  }
+}
+
 export default class App extends Component {
   render() {
     return (
       <div>
+        {/* level1 */}
         <MyComponent />
         <FunctionComponent />
         <ClassComponentState />
         <EventHandleComponent />
         <LifeCycleComponent />
         <NewLifeCycleComponent />
+        {/* level2 */}
+        {/* <HomePage {...store} /> */}
+        <Provider value={store}>
+          {/* 方法一 */}
+          {/* consumer 里边是个函数 */}
+          {/* <Consumer>
+            {
+              ctx => (
+                <Fragment>
+                  <HomePage {...ctx} />
+                  <HomePage {...ctx} />
+                </Fragment>
+              )
+            }
+          </Consumer> */}
+
+
+          {/* 方法二 */}
+          <HomePage />
+        </Provider>
       </div>
     )
   }
