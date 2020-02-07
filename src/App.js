@@ -10,6 +10,8 @@ import HomePage from './pages/level2/HomePage';
 import { Provider, Consumer, Parent } from './pages/level2/AppContext';
 import HocPage from './pages/level2/HocPage';
 import Composition from './pages/level2/Composition';
+import HookPage from './pages/level2/HookPage';
+import MultipleHooksPage from './pages/level2/MultipleHooksPage';
 
 // function App() {
 //   return (
@@ -66,6 +68,8 @@ export default class App extends Component {
           <HocPage />
           <Composition />
           <Parent />
+          <HookPage type="Hook" />
+          <MultipleHooksPage />
         </Provider>
       </div>
     )
