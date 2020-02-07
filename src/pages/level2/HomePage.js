@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Consumer } from './AppContext'
+import { Consumer, handleConsumer } from './AppContext'
 import TopBar from './TopBar'
 
 class HomePage extends Component {
@@ -13,6 +13,7 @@ class HomePage extends Component {
 
     render() {
         console.log(this.props)
+        const HandleConsumer = handleConsumer(HomeHandle);
         return (
             <div>
                 <h3>HomePage</h3>
@@ -22,6 +23,7 @@ class HomePage extends Component {
                         ctx => <HomeHandle {...ctx} />
                     }
                 </Consumer>
+                <HandleConsumer />
             </div>
         )
     }
@@ -30,5 +32,5 @@ class HomePage extends Component {
 export default HomePage
 
 function HomeHandle(props) {
-    return (<div>{props.user.name}</div>)
+    return (<div>{props.user.name} - HomePage</div>)
 }

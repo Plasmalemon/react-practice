@@ -8,6 +8,7 @@ import NewLifeCycleComponent from './pages/level1/NewLifeCycleComponent';
 import HomePage from './pages/level2/HomePage';
 
 import { Provider, Consumer } from './pages/level2/AppContext';
+import HocPage from './pages/level2/HocPage';
 
 // function App() {
 //   return (
@@ -61,6 +62,7 @@ export default class App extends Component {
 
           {/* 方法二 */}
           <HomePage />
+          <HocPage />
         </Provider>
       </div>
     )
