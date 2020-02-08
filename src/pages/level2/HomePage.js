@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Consumer, handleConsumer } from './AppContext'
 import TopBar from './TopBar'
 
+const HandleConsumer = handleConsumer(HomeHandle);
 class HomePage extends Component {
     constructor(props) {
         super(props)
@@ -13,7 +14,6 @@ class HomePage extends Component {
 
     render() {
         console.log(this.props)
-        const HandleConsumer = handleConsumer(HomeHandle);
         return (
             <div>
                 <h3>HomePage</h3>
