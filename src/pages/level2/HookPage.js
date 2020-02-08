@@ -34,6 +34,11 @@ function useClock() {
     return date
 }
 
+// 如果你正在将代码从 class 组件迁移到使用 Hook 的函数组件，则需要注意 useLayoutEffect 与 componentDidMount、componentDidUpdate 的调用阶段是一样的。
+// 但是，我们推荐你一开始先用 useEffect，只有当它出问题的时候再尝试使用 useLayoutEffect。
+
+
+
 // 只在最顶层使用 Hook，不要在循环，条件或嵌套函数中调用 Hook。(如果我们想要有条件地执行一个effect，可以将判断放到Hook的内部:)
 // 只能用在function组件中或自定义hook中,不能用在class组件中
 // 只在React函数(大写字母开头的函数组件, use开头的hook)中调用Hook。不要在普通的JavaScript函数中调用Hook:
