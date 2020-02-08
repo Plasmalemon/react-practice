@@ -24,7 +24,7 @@ function Child(props) {
 
 // 简化
 const foo = Cmp => props => {
-    console.log('Cmp', Cmp)
+    // console.log('Cmp', Cmp)
     return (
         <div className="border">
             <Cmp {...props} />
@@ -51,7 +51,7 @@ class Child2 extends Component {
 
 // 处理原生标签
 const fooHost = cmp => {
-    console.log('fooHost', cmp)
+    // console.log('fooHost', cmp)
     // return cmp // 返回原先标签
     // element, config , child
     // return React.cloneElement(cmp, { className: 'border' })

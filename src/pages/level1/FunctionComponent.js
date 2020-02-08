@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export function FunctionComponent(props) {
     const [date, setDate] = useState(new Date());
+    // hooks中setState是覆盖,class中是合并
 
     useEffect(() => {
         // console.log("useEffect");

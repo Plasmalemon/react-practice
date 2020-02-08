@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 // 更简洁、更易理解的代码
 
 function HookPage(props) {
-    console.log('props', props);
+    // console.log('props', props);
     const [counter, setCounter] = useState(0)
     return (
         <div>
