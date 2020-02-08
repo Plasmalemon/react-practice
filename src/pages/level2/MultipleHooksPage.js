@@ -17,7 +17,7 @@ function MultipleHooksPage() {
     );
 }
 
-function FruitList({ fruits, setFruits }) {
+export function FruitList({ fruits, setFruits }) {
     // 定义的方法不可以放在useEffect里边去 这个是因为 useEfect是几个生命周期的结合, useEfect里边的内容比return里边的内容后执行
     // useEffect里边是放副作用的
     // useEffect(() => {
@@ -43,7 +43,7 @@ function FruitList({ fruits, setFruits }) {
     );
 }
 
-function FruitAdd({ fruits, addFruit }) {
+export function FruitAdd({ fruits, addFruit }) {
     const [name, setName] = useState("");
     return (
         <div>

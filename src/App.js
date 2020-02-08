@@ -12,6 +12,8 @@ import HocPage from './pages/level2/HocPage';
 import Composition from './pages/level2/Composition';
 import HookPage from './pages/level2/HookPage';
 import MultipleHooksPage from './pages/level2/MultipleHooksPage';
+import UseReducerPage from './pages/level2/UseReducerPage';
+import UseContext from './pages/level2/UseContext';
 
 // function App() {
 //   return (
@@ -70,6 +72,8 @@ export default class App extends Component {
           <Parent />
           <HookPage type="Hook" />
           <MultipleHooksPage />
+          <UseReducerPage />
+          <UseContext />
         </Provider>
       </div>
     )
