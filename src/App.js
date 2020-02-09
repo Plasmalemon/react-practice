@@ -16,6 +16,7 @@ import UseReducerPage from './pages/level2/UseReducerPage';
 import UseContext from './pages/level2/UseContext';
 import FormPage from './pages/level3/FormPage';
 import MyFormPage from './pages/level3/MyFormPage';
+import DialogPage from './pages/level3/DialogPage';
 
 // function App() {
 //   return (
@@ -79,6 +80,7 @@ export default class App extends Component {
           {/* level3 */}
           <FormPage />
           <MyFormPage />
+          <DialogPage />
         </Provider>
       </div>
     )
