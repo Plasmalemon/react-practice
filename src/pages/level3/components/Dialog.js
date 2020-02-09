@@ -20,6 +20,8 @@ class Dialog extends Component {
         window.document.body.removeChild(this.node)
     }
 
+    // ReactDOM.render(vdom, container)
+    // createPortal(vdom, container)
 
     render() {
         return createPortal(

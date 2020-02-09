@@ -17,6 +17,7 @@ import UseContext from './pages/level2/UseContext';
 import FormPage from './pages/level3/FormPage';
 import MyFormPage from './pages/level3/MyFormPage';
 import DialogPage from './pages/level3/DialogPage';
+import './pages/level3/compose'
 
 // function App() {
 //   return (

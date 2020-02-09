@@ -2,7 +2,7 @@ import React, { useReducer, useEffect } from 'react';
 import { FruitList, FruitAdd } from './MultipleHooksPage'
 
 // reducer 就是一个纯函数，接收旧的 state 和 action，返回新的 state。
-// 为什么叫reducer是因为它和reduce里边的callback比较像
+// 为什么叫reducer是因为它和reduce里边的callback属于相同类型
 // useReducer是useState的可选项，常用于组件有复杂状态逻辑时，类似于redux中reducer概念。
 
 function fruitReducer(state = [], action) {
