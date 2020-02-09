@@ -1,7 +1,7 @@
-import { createStore, applyMiddleware } from 'redux'
-// import { createStore } from '../MyRedux'
-import thunk from "redux-thunk"
-import logger from "redux-logger"
+// import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware } from '../MyRedux'
+// import thunk from "redux-thunk"
+// import logger from "redux-logger"
 
 function counterReducer(state = 0, action) {
     console.log('state', state)
@@ -15,8 +15,26 @@ function counterReducer(state = 0, action) {
     }
 }
 
+// const store = createStore(counterReducer, applyMiddleware(thunk, logger))
 const store = createStore(counterReducer, applyMiddleware(thunk, logger))
 // 经过createStore包装过后 会增加 dispatch, subscribe, getState, replaceReducer, Symbol(boservable)
+
+
+function logger() {
+    return dispatch => action => {
+        console.log(action.type + "执行了！");
+        return dispatch(action);
+    };
+}
+
+function thunk() {
+    return dispatch => action => {
+        if (typeof action === 'function') {
+            return action(dispatch)
+        }
+        return dispatch(action);
+    };
+}
 
 export default store
 
