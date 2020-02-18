@@ -19,6 +19,7 @@ import MyFormPage from './pages/level3/MyFormPage';
 import DialogPage from './pages/level3/DialogPage';
 import './pages/level3/compose'
 import ReduxPage from './pages/level3/reduxPages/ReduxPage';
+import ReduxPage2 from './pages/level4/reduxPages/ReduxPage2';
 
 // function App() {
 //   return (
@@ -84,6 +85,8 @@ export default class App extends Component {
           <MyFormPage />
           <DialogPage />
           <ReduxPage />
+          {/* level4 */}
+          <ReduxPage2 />
         </Provider>
       </div>
     )
