@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-
+// import { connect } from 'react-redux'
+import { connect } from './myReactRedux'
 
 
 class ReduxPage2 extends Component {
@@ -23,6 +23,8 @@ class ReduxPage2 extends Component {
                 {/* <button onClick={() => dispatch({ type: 'add' })}>add</button> */}
                 {/* 不使用dispatch */}
                 <button onClick={add}>add</button>
+                {/* 执行add方法的时候 其实是执行dispatch({type: 'add'}) */}
+                {/* {add: (...arg) => dispatch(actionCreator(...arg))} */}
             </div>
         )
     }
