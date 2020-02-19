@@ -1,4 +1,3 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -15,10 +14,10 @@ export const connect = (mapStateToProps = state => state, mapDispatchToProps = {
             }
         }
         componentDidMount() {
-            console.log('context', this.context)
+            // console.log('context', this.context)
             const { store } = this.context
-            console.log('store', store)
-            console.log('props', this.props)
+            // console.log('store', store)
+            // console.log('props', this.props)
             store.subscribe(() => this.update())
             this.update()
         }
