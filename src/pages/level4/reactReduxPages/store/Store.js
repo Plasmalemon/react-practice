@@ -1,4 +1,4 @@
-import { createStore } from 'redux'
+import { createStore, combineReducers } from 'redux'
 
 function counterReducer(state = 0, action) {
     // console.log('state', state)
@@ -12,6 +12,12 @@ function counterReducer(state = 0, action) {
     }
 }
 
-const store = createStore(counterReducer)
+// const store = createStore(counterReducer)
+
+const store = createStore(
+    combineReducers({
+        counter: counterReducer
+    })
+)
 
 export default store
