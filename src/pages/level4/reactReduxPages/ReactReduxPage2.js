@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 // import { connect } from 'react-redux'
-import { connect } from './myReactRedux'
+// import { connect } from './myReactRedux'
+
+import { connect } from './myReactRedux2'
 
 
 class ReduxPage2 extends Component {
