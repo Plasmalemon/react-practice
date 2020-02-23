@@ -26,3 +26,5 @@ code {
   text-align: center;
   line-height: 100px;
 }
+
+.router-page a {padding: 0 10px;}

@@ -22,3 +22,26 @@ ReactDOM.render(
 
 
 serviceWorker.unregister();
+
+
+// 失败案例
+// import { Route, Router } from 'react-router-dom'
+// import HomePage from './pages/level4/reactTouterPages/HomePage';
+// //把route参数传递给你的组件
+// function FadingRoute({ component: Component, ...rest }) {
+//     return (
+//         <Route
+//             {...rest}
+//             render={routeProps => (
+//                 <Component {...routeProps} />
+//             )}
+//         />
+//     );
+// }
+
+// ReactDOM.render(
+//     <Router>
+//         <FadingRoute path="/cool" component={<HomePage />} />
+//     </Router>,
+//     document.getElementById('root')
+// );
