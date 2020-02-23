@@ -21,7 +21,7 @@ ReactDOM.render(
     document.getElementById('root'));
 
 
-serviceWorker.unregister();
+// serviceWorker.unregister();
 
 
 // 失败案例
